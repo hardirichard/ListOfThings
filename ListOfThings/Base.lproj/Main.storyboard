@@ -31,7 +31,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rZa-dT-vvf">
-                                            <rect key="frame" x="264" y="0.0" width="150" height="200"/>
+                                            <rect key="frame" x="264" y="10" width="150" height="180"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="150" id="XyE-DJ-Da3"/>
                                                 <constraint firstAttribute="height" constant="150" id="lYK-A3-rEQ"/>
@@ -41,8 +41,8 @@
                                     <constraints>
                                         <constraint firstItem="lPG-xV-Xdj" firstAttribute="leading" secondItem="FKX-10-4d4" secondAttribute="leadingMargin" id="BbI-Wj-zW4"/>
                                         <constraint firstItem="lPG-xV-Xdj" firstAttribute="top" secondItem="FKX-10-4d4" secondAttribute="topMargin" id="TI2-bK-nvm"/>
-                                        <constraint firstAttribute="bottom" secondItem="rZa-dT-vvf" secondAttribute="bottom" id="ZIw-Pk-SWf"/>
-                                        <constraint firstItem="rZa-dT-vvf" firstAttribute="top" secondItem="FKX-10-4d4" secondAttribute="top" id="auS-ux-nQc"/>
+                                        <constraint firstAttribute="bottom" secondItem="rZa-dT-vvf" secondAttribute="bottom" constant="10" id="ZIw-Pk-SWf"/>
+                                        <constraint firstItem="rZa-dT-vvf" firstAttribute="top" secondItem="FKX-10-4d4" secondAttribute="top" constant="10" id="auS-ux-nQc"/>
                                         <constraint firstItem="lPG-xV-Xdj" firstAttribute="bottom" secondItem="FKX-10-4d4" secondAttribute="bottomMargin" id="cfy-5X-MA7"/>
                                         <constraint firstAttribute="trailing" secondItem="rZa-dT-vvf" secondAttribute="trailing" id="fQZ-YE-gtO"/>
                                         <constraint firstItem="rZa-dT-vvf" firstAttribute="leading" secondItem="lPG-xV-Xdj" secondAttribute="trailing" id="qfP-Qy-dur"/>

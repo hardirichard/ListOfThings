@@ -16,16 +16,26 @@ class ThingViewController: UIViewController, ListOfThingsDelegate {
     
     func didTapCell(item: Item) {
         
-        view.backgroundColor = .systemBackground
-        self.titleLabel.text = item.title
-        self.picture.load(url: URL(string: item.url)!)
+        self.tempText = item.title
+        self.tempPictureURL = item.url
     }
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var picture: UIImageView!
     
+    var tempText: String!
+    var tempPictureURL: String!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        updateUI()
+    }
+    
+    
+    func updateUI() {
+        titleLabel.text = tempText
+        picture.load(url: URL(string: tempPictureURL)!)
     }
 }
