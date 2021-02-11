@@ -1,0 +1,6 @@
+framework module Pods_ListOfThings {
+  umbrella header "Pods-ListOfThings-umbrella.h"
+
+  export *
+  module * { export * }
+}
