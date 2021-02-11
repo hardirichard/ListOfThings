@@ -12,13 +12,7 @@ import RxCocoa
 
 
 
-class ThingViewController: UIViewController, ListOfThingsDelegate {
-    
-    func didTapCell(item: Item) {
-        
-        self.tempText = item.title
-        self.tempPictureURL = item.url
-    }
+class ThingViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var picture: UIImageView!
@@ -37,5 +31,12 @@ class ThingViewController: UIViewController, ListOfThingsDelegate {
     func updateUI() {
         titleLabel.text = tempText
         picture.load(url: URL(string: tempPictureURL)!)
+    }
+}
+
+extension ThingViewController: ListOfThingsDelegate {
+    func didTapCell(item: Item) {
+        self.tempText = item.title
+        self.tempPictureURL = item.url
     }
 }
