@@ -20,5 +20,4 @@ struct Item: Decodable {
     let thumbnailUrl: String
     let title: String
     let url: String
-    
 }
