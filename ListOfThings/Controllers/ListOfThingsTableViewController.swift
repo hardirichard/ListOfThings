@@ -25,6 +25,7 @@ class ListOfThingsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         fetchData()
 
     }
@@ -44,9 +45,9 @@ class ListOfThingsTableViewController: UITableViewController {
         
         let item = items[indexPath.row]
         
-        cell.titleLabel.text = item.title
-        cell.thumbnailImage.load(url: URL(string: item.thumbnailUrl)!)
+        cell.titleLabel.text = item.title.capitalizingFirstLetter()
         
+        cell.thumbnailImage.load(url: URL(string: item.thumbnailUrl)!)
         
         return cell
     }

@@ -11,7 +11,6 @@ import RxSwift
 import RxCocoa
 
 
-
 class ThingViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
@@ -31,12 +30,14 @@ class ThingViewController: UIViewController {
     func updateUI() {
         titleLabel.text = tempText
         picture.load(url: URL(string: tempPictureURL)!)
+        self.title = "Item details"
     }
 }
 
+
 extension ThingViewController: ListOfThingsDelegate {
     func didTapCell(item: Item) {
-        self.tempText = item.title
+        self.tempText = item.title.capitalizingFirstLetter()
         self.tempPictureURL = item.url
     }
 }
